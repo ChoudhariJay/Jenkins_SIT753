@@ -52,7 +52,7 @@ pipeline {
             emailext(
                 to: 'choudharijay3@gmail.com',
                 subject: "Pipeline Successful: ${env.JOB_NAME} ${env.BUILD_NUMBER}",
-                body: "Good news, the pipeline succeeded! See attached log for details.",
+                body: "Good news, the pipeline succeeded! See log that is attached for details.",
                 attachmentsPattern: 'build.log'
             )
         }
