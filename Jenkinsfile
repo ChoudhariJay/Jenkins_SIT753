@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo " Build - Build the code using a build automation tool for stage 1(e.g., Maven)."
+                echo " Build - Build the code using a build automation tool for stage 1(e.g., Maven)"
             }
         }
         stage('Unit and Integration Tests') {
