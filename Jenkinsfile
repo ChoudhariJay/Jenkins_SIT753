@@ -43,7 +43,7 @@ pipeline {
         always {
             script {
                 def logFile = 'build.log'
-                def logLines = currentBuild.getRawBuild().getLog(1000)
+                def logLines = currentBuild.getRawBuild().getLog(10000)
                 writeFile file: logFile, text: logLines.join('\n')
             }
             echo 'Pipeline completed.'
